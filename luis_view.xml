@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
 <openerp>
     <data>
-        <!-- view specific to res.partner -->
-        <!-- record model="ir.ui.view" id="view_partner_form_ntty">
-            <field name="name">view.partner.form.ntty</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_form"/>
-	    <field name="sequence">100</field>
+        <record model="ir.ui.view" id="Lp_change_literals_in_quotation_30May">
+            <field name="name">Lp_change_literals_in_quotation_30May</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+	    <field name="sequence">97</field>
             <field name="arch" type="xml">
+<!-- Change label of tabs -->
+<xpath expr="//page[@string='Public Holidays']" position="attributes">
+                           <attribute name='string'>Destination Country Holidays</attribute>
+                </xpath>
             </field>
-        </record -->
-
+        </record>
     </data>
 </openerp>
 
